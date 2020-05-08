@@ -1,0 +1,81 @@
+* { 
+    margin: 0px; 
+    padding: 0px; 
+}
+html {
+    height: auto;
+    margin: 0px;
+}
+body {
+    height: 100%;
+    margin: 0px;
+}
+body {
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'  
+}
+.text-center {
+    text-align: center;
+}
+.menu {
+    text-align: center;
+    font-size: 120%;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+a {
+    padding: 0.5rem;
+    /* margin: 0; */
+    display: block;
+    text-decoration: none;
+}
+a:link {
+    color: royalblue;
+    transition: 0.5s;
+}
+a:visited {
+    color: royalblue;
+}
+a:hover {
+    color: white;
+    background-color: royalblue;
+}
+/* a:active {
+    color: red;
+    background-color: #eeffaa;
+} */
+li {
+    width: 25%;
+    float: left;
+    /* overflow: hidden; */
+}
+.sectiontitle {
+    background: linear-gradient(transparent 70%, #a7d6ff 50%);
+    width: 50%;
+    /* display: inline-block; */
+    margin: 10px auto;
+}
+h2 {
+    font-family: Verdana;
+    font-weight: normal;
+}
+.top {
+    background-color: #a7d6ff;
+    height: 13em;
+    text-align: center;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test {
+    background: linear-gradient(transparent 70%, white 50%);
+    width: 100%;/*ここを文字の文字の長さに対応させる．*/
+    margin: 10px auto;
+}
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
