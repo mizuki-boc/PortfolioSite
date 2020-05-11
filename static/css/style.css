@@ -11,9 +11,6 @@ body {
     margin: 0px;
     font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
 }
-.text-center {
-    text-align: center;
-}
 .menu {
     text-align: center;
     font-size: 120%;
@@ -62,6 +59,7 @@ header a:hover {
     width: 50%;
     /* display: inline-block; */
     margin: 20px auto;
+    text-align: center;
 }
 h2 {
     font-family: Verdana;
@@ -97,10 +95,48 @@ th {
     font-family: Verdana;
     font-weight: normal;
 }
-th a {
-    text-decoration: none;
-}
-section p {
-    width: 60%;
+
+.work_frame {
+    width: 50%;
     margin: auto;
 }
+
+.flex{
+    max-width: 600px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (min-width:600px) {
+    .flex{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .item+.item{
+        margin-left:1.0em;
+    }
+}
+  
+.work_content {
+    margin: auto;
+    width: 40%;
+    height: 40%;
+}
+.work_content .work_text {
+    overflow: hidden;
+    height: 100%;
+}
+.work_content .work_image {
+    float: left;
+    height: 80%;
+    width: 80%;
+}
+.test_image {
+    float: left;
+    max-width: 80%;
+    height: auto;
+} 
