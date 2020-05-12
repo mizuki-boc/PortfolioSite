@@ -9,7 +9,9 @@ html {
 body {
     height: 100%;
     margin: 0px;
-    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+    /* font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; */
+    line-height: 30px;
+    font-size: 110%;
 }
 .menu {
     text-align: center;
@@ -95,48 +97,45 @@ th {
     font-family: Verdana;
     font-weight: normal;
 }
-
-.work_frame {
-    width: 50%;
-    margin: auto;
-}
-
-.flex{
-    max-width: 600px;
-    margin: 0 auto;
-}
-img{
-    max-width: 100%;
+.work-frame {
+    width: 70%;
+    margin: 15px auto;
     display: block;
-    margin: 0 auto;
 }
-@media screen and (min-width:600px) {
-    .flex{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    .item+.item{
-        margin-left:1.0em;
-    }
+/* .work-image {
+    width: 50%;
 }
-  
-.work_content {
-    margin: auto;
-    width: 40%;
-    height: 40%;
+.work-image img {
+    width: 100%;
+} */
+.work-frame img {
+    width: 50%;
 }
-.work_content .work_text {
+.work-detail {
+    width: 45%;
     overflow: hidden;
-    height: 100%;
+    margin: auto 0px;
+    float: right;
 }
-.work_content .work_image {
-    float: left;
-    height: 80%;
-    width: 80%;
-}
-.test_image {
-    float: left;
-    max-width: 80%;
-    height: auto;
-} 
+@media (max-width: 600px) {
+    /* 600px以下の時に適応 => detail の文字量に応じて変更する必要あり？*/
+    .work-detail {
+        width: 100%;
+        overflow: hidden;
+        margin: auto 0px;
+        float: none;
+    }
+    /* イメージはセンターに */
+    .work-frame img {
+        margin: auto;
+        width: 100%;
+    }
+ }
+ @media (min-width: 900px) {
+    /* 横幅が800px以上の場合に適用するスタイル */
+    .work-frame {
+        width: 60%;
+        margin: 15px auto;
+        display: block;
+    }
+ }

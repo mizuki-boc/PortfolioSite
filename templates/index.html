@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type=text/css href="/static/css/style.css">
+        <link rel="shortcut icon" href="/static/images/favicon.png">
         <script src="https://kit.fontawesome.com/ed64ecf526.js" crossorigin="anonymous"></script>
         <meta charset="utf-8">
         <title>Mizuki Kajita's Portfolio Site</title>
@@ -55,9 +56,8 @@
                 <span style="text-decoration: underline;">研究テーマ</span>
             </div>
             <p style="width: 60%; margin: auto;">
-                ウェアラブルデバイスに見立てて試作したセンサモジュールを用いた，
-                人間の心拍数推定に関する研究を行っています．<br>
-                私は実験でセンサモジュールから得られた信号を
+                ウェアラブルデバイスに見立てて試作したセンサモジュールを用い，取得した信号から心拍数を導出するアルゴリズム (光電容積脈波法) の研究を行っています．<br>
+                研究でのデータ処理，アルゴリズム実装には MATLAB, Python を使用しています．
             </p>
             <br>
             <div style="margin: auto; width: 60%; text-align: left">
@@ -69,6 +69,7 @@
                     <li>「トレリスに基づいた心拍数推定におけるパラメータの最適化」電子情報通信学会,総合大会</li>
                 </ul>
             </div>
+            <br>
             <div style="margin: auto; width: 60%; text-align: left">
                 <span style="text-decoration: underline;">学会発表（海外）</span>
             </div>
@@ -91,22 +92,34 @@
         </section>
         <section>
             <h2 id="work" class="sectiontitle">Works</h2>
-            <div class="flex">
-                <div class="item">
-                    <img src="static/images/CLI_Reversi_image.png">
-                </div>
-                <div class="item">
-                    <p>コマンドラインで動くリバーシゲーム</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="item">
-                    <img src="static/images/GUI_Reversi_image.png">
-                </div>
-                <div class="item">
-                    <p>コマンドラインで動くリバーシゲーム</p>
+            <!-- CLI reversi -->
+            <div class="work-frame">
+                <img src="static/images/CLI_Reversi_image.png" alt="portfolio" class="CLI_Reversi">
+                <div class="work-detail">
+                    <!-- 名前　概要　使用言語 -->
+                    コマンドラインで動くリバーシ．<br>
+                    Python で作成．
                 </div>
             </div>
+            <!-- GUI reversi -->
+            <div class="work-frame">
+                <img src="static/images/GUI_Reversi_image.png" alt="portfolio" class="GUI_Reversi">
+                <div class="work-detail">
+                    GUI対応させたリバーシ．<br>
+                    Python のビデオゲーム作成ライブラリ pygame を用いてGUI作成．
+                </div>
+            </div>
+            <!-- blackjack -->
+            <div class="work-frame">
+                <img src="static/images/blackJack_image.png" alt="portfolio" class="Blackjack">
+                <div class="work-detail">
+                    コマンドラインで動くブラックジャック．<br>
+                    Python で作成．<br>
+                    デッキをランダム生成し，任意のカードの出現確率，収支の期待値計算が可能．
+                </div>
+            </div>
+            <!-- shirodora いる？ -->
+            <!-- portfolio -->
         </section>
         <br>
     </body>
